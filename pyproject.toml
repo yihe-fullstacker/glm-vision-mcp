@@ -1,0 +1,19 @@
+[project]
+name = "glm-vision-mcp"
+version = "0.1.0"
+description = "MCP Server wrapping Zhipu GLM-4.6V-Flash vision model"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.0.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+glm-vision-mcp = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
